@@ -35,15 +35,6 @@ if (isset($_POST['upload'])) {
                     $stmt->execute(array(
                         'zfilename'     => $filename
                     ));
-                    
-	// $db = mysqli_connect("localhost", "root", "", "test");
-
-	// // Get all the submitted data from the form
-	// $sql = "INSERT INTO image (filename) VALUES ('$filename')";
-
-	// // Execute query
-	// mysqli_query($db, $sql);
-
 
 	// Now let's move the uploaded image into the folder: image
 	if (move_uploaded_file($tempname, $folder)) {
